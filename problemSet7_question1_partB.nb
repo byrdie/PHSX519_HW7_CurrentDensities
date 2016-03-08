@@ -1,0 +1,326 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 10.3' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      9108,        316]
+NotebookOptionsPosition[      8156,        276]
+NotebookOutlinePosition[      8493,        291]
+CellTagsIndexPosition[      8450,        288]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell["Question 1", "Section",
+ CellChangeTimes->{{3.666382897370277*^9, 3.666382900709444*^9}}],
+
+Cell[CellGroupData[{
+
+Cell["Part b.", "Subsection",
+ CellChangeTimes->{{3.666382908344822*^9, 3.666382910382316*^9}}],
+
+Cell[CellGroupData[{
+
+Cell["The exact expression for the magnetic field is", "Subsubsection",
+ CellChangeTimes->{{3.666382927362404*^9, 3.666382935226733*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+   SubscriptBox["B", "z"], "[", "z_", "]"}], "=", 
+  RowBox[{
+   FractionBox[
+    RowBox[{
+     SubscriptBox["\[Mu]", "0"], "J", " ", "a"}], 
+    RowBox[{"2", 
+     SuperscriptBox["d", "3"]}]], 
+   RowBox[{"(", 
+    RowBox[{
+     SuperscriptBox[
+      RowBox[{"(", 
+       RowBox[{"1", "-", 
+        FractionBox[
+         RowBox[{"b", " ", "z"}], 
+         SuperscriptBox["d", "2"]], "+", 
+        FractionBox[
+         SuperscriptBox["z", "2"], 
+         SuperscriptBox["d", "2"]]}], ")"}], 
+      RowBox[{
+       RowBox[{"-", "3"}], "/", "2"}]], "+", 
+     SuperscriptBox[
+      RowBox[{"(", 
+       RowBox[{"1", "+", 
+        FractionBox[
+         RowBox[{"b", " ", "z"}], 
+         SuperscriptBox["d", "2"]], "+", 
+        FractionBox[
+         SuperscriptBox["z", "2"], 
+         SuperscriptBox["d", "2"]]}], ")"}], 
+      RowBox[{
+       RowBox[{"-", "3"}], "/", "2"}]]}], ")"}]}]}]], "Input",
+ CellChangeTimes->{{3.666382947955298*^9, 3.666382995210924*^9}, {
+  3.666383055752116*^9, 3.6663831514773397`*^9}, {3.666383317246057*^9, 
+  3.666383317616344*^9}, {3.666383421949102*^9, 3.666383470687182*^9}}],
+
+Cell[BoxData[
+ FractionBox[
+  RowBox[{"a", " ", "J", " ", 
+   RowBox[{"(", 
+    RowBox[{
+     FractionBox["1", 
+      SuperscriptBox[
+       RowBox[{"(", 
+        RowBox[{"1", "-", 
+         FractionBox[
+          RowBox[{"b", " ", "z"}], 
+          SuperscriptBox["d", "2"]], "+", 
+         FractionBox[
+          SuperscriptBox["z", "2"], 
+          SuperscriptBox["d", "2"]]}], ")"}], 
+       RowBox[{"3", "/", "2"}]]], "+", 
+     FractionBox["1", 
+      SuperscriptBox[
+       RowBox[{"(", 
+        RowBox[{"1", "+", 
+         FractionBox[
+          RowBox[{"b", " ", "z"}], 
+          SuperscriptBox["d", "2"]], "+", 
+         FractionBox[
+          SuperscriptBox["z", "2"], 
+          SuperscriptBox["d", "2"]]}], ")"}], 
+       RowBox[{"3", "/", "2"}]]]}], ")"}], " ", 
+   SubscriptBox["\[Mu]", "0"]}], 
+  RowBox[{"2", " ", 
+   SuperscriptBox["d", "3"]}]]], "Output",
+ CellChangeTimes->{{3.6663831199290247`*^9, 3.666383152335267*^9}, 
+   3.666383187669243*^9, 3.666383318449471*^9, 3.6663834733378887`*^9}]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Expand the magnetic field about z=0", "Subsubsection",
+ CellChangeTimes->{{3.66638323443573*^9, 3.666383243356638*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+   SubscriptBox["B", 
+    RowBox[{"z", ",", "approx"}]], "[", "z_", "]"}], "=", 
+  RowBox[{
+   RowBox[{"Series", "[", 
+    RowBox[{
+     RowBox[{
+      SubscriptBox["B", "z"], "[", "z", "]"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"z", ",", "0", ",", "4"}], "}"}]}], "]"}], "//", 
+   "FullSimplify"}]}]], "Input",
+ CellChangeTimes->{{3.666383274096691*^9, 3.666383387052867*^9}}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+   FractionBox[
+    RowBox[{"a", " ", "J", " ", 
+     SubscriptBox["\[Mu]", "0"]}], 
+    SuperscriptBox["d", "3"]], "+", 
+   FractionBox[
+    RowBox[{"3", " ", "a", " ", 
+     RowBox[{"(", 
+      RowBox[{
+       RowBox[{"5", " ", 
+        SuperscriptBox["b", "2"]}], "-", 
+       RowBox[{"4", " ", 
+        SuperscriptBox["d", "2"]}]}], ")"}], " ", "J", " ", 
+     SubscriptBox["\[Mu]", "0"], " ", 
+     SuperscriptBox["z", "2"]}], 
+    RowBox[{"8", " ", 
+     SuperscriptBox["d", "7"]}]], "+", 
+   FractionBox[
+    RowBox[{"15", " ", "a", " ", 
+     RowBox[{"(", 
+      RowBox[{
+       RowBox[{"21", " ", 
+        SuperscriptBox["b", "4"]}], "-", 
+       RowBox[{"56", " ", 
+        SuperscriptBox["b", "2"], " ", 
+        SuperscriptBox["d", "2"]}], "+", 
+       RowBox[{"16", " ", 
+        SuperscriptBox["d", "4"]}]}], ")"}], " ", "J", " ", 
+     SubscriptBox["\[Mu]", "0"], " ", 
+     SuperscriptBox["z", "4"]}], 
+    RowBox[{"128", " ", 
+     SuperscriptBox["d", "11"]}]], "+", 
+   InterpretationBox[
+    SuperscriptBox[
+     RowBox[{"O", "[", "z", "]"}], "5"],
+    SeriesData[$CellContext`z, 0, {}, 0, 5, 1],
+    Editable->False]}],
+  SeriesData[$CellContext`z, 
+   0, {$CellContext`a $CellContext`d^(-3) $CellContext`J 
+    Subscript[$CellContext`\[Mu], 0], 0, 
+    Rational[3, 8] $CellContext`a $CellContext`d^(-7) (5 $CellContext`b^2 - 
+     4 $CellContext`d^2) $CellContext`J Subscript[$CellContext`\[Mu], 0], 0, 
+    Rational[15, 128] $CellContext`a $CellContext`d^(-11) (
+     21 $CellContext`b^4 - 56 $CellContext`b^2 $CellContext`d^2 + 
+     16 $CellContext`d^4) $CellContext`J Subscript[$CellContext`\[Mu], 0]}, 0,
+    5, 1],
+  Editable->False]], "Output",
+ CellChangeTimes->{{3.666383340086173*^9, 3.666383353237124*^9}, 
+   3.666383387784554*^9, 3.666383493517872*^9}]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ "Evaluate the numerator of each term at ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    SuperscriptBox["d", "2"], " ", "=", " ", 
+    RowBox[{
+     SuperscriptBox["a", "2"], "+", 
+     RowBox[{
+      SuperscriptBox["b", "2"], "/", "4"}]}]}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " to put the expansion in the form given in the book."
+}], "Subsubsection",
+ CellChangeTimes->{{3.666384217470747*^9, 3.666384306861376*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{
+   RowBox[{
+    FractionBox["3", "8"], " ", 
+    RowBox[{"(", 
+     RowBox[{
+      RowBox[{"5", " ", 
+       SuperscriptBox["b", "2"]}], "-", 
+      RowBox[{"4", " ", 
+       SuperscriptBox["d", "2"]}]}], ")"}]}], "/.", " ", 
+   RowBox[{"d", "\[Rule]", " ", 
+    SqrtBox[
+     RowBox[{
+      SuperscriptBox["a", "2"], "+", 
+      RowBox[{
+       SuperscriptBox["b", "2"], "/", "4"}]}]]}]}], " ", "//", 
+  "FullSimplify"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{
+    FractionBox["15", "128"], " ", 
+    RowBox[{"(", 
+     RowBox[{
+      RowBox[{"21", " ", 
+       SuperscriptBox["b", "4"]}], "-", 
+      RowBox[{"56", " ", 
+       SuperscriptBox["b", "2"], " ", 
+       SuperscriptBox["d", "2"]}], "+", 
+      RowBox[{"16", " ", 
+       SuperscriptBox["d", "4"]}]}], ")"}]}], "/.", " ", 
+   RowBox[{"d", "\[Rule]", " ", 
+    SqrtBox[
+     RowBox[{
+      SuperscriptBox["a", "2"], "+", 
+      RowBox[{
+       SuperscriptBox["b", "2"], "/", "4"}]}]]}]}], " ", "//", 
+  "FullSimplify"}]}], "Input",
+ CellChangeTimes->{{3.666384332352269*^9, 3.666384383802292*^9}, {
+  3.6663844410819597`*^9, 3.666384448041841*^9}, {3.666384485030311*^9, 
+  3.66638452745087*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  FractionBox["3", "2"], " ", 
+  RowBox[{"(", 
+   RowBox[{
+    RowBox[{"-", 
+     SuperscriptBox["a", "2"]}], "+", 
+    SuperscriptBox["b", "2"]}], ")"}]}]], "Output",
+ CellChangeTimes->{{3.666384371812606*^9, 3.666384384319368*^9}, 
+   3.666384449878422*^9, {3.666384491227025*^9, 3.6663845319726553`*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  FractionBox["15", "16"], " ", 
+  RowBox[{"(", 
+   RowBox[{
+    RowBox[{"2", " ", 
+     SuperscriptBox["a", "4"]}], "-", 
+    RowBox[{"6", " ", 
+     SuperscriptBox["a", "2"], " ", 
+     SuperscriptBox["b", "2"]}], "+", 
+    SuperscriptBox["b", "4"]}], ")"}]}]], "Output",
+ CellChangeTimes->{{3.666384371812606*^9, 3.666384384319368*^9}, 
+   3.666384449878422*^9, {3.666384491227025*^9, 3.666384531977263*^9}}]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]]
+},
+WindowSize->{959, 1028},
+WindowMargins->{{0, Automatic}, {Automatic, 0}},
+FrontEndVersion->"10.3 for Linux x86 (64-bit) (December 10, 2015)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 95, 1, 65, "Section"],
+Cell[CellGroupData[{
+Cell[700, 27, 95, 1, 44, "Subsection"],
+Cell[CellGroupData[{
+Cell[820, 32, 137, 1, 35, "Subsubsection"],
+Cell[CellGroupData[{
+Cell[982, 37, 1146, 36, 61, "Input"],
+Cell[2131, 75, 1015, 31, 92, "Output"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[3195, 112, 125, 1, 35, "Subsubsection"],
+Cell[CellGroupData[{
+Cell[3345, 117, 415, 13, 34, "Input"],
+Cell[3763, 132, 1831, 50, 56, "Output"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[5643, 188, 451, 13, 65, "Subsubsection"],
+Cell[CellGroupData[{
+Cell[6119, 205, 1213, 40, 120, "Input"],
+Cell[7335, 247, 331, 9, 49, "Output"],
+Cell[7669, 258, 435, 12, 82, "Output"]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)
+

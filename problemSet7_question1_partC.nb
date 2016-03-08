@@ -1,0 +1,163 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 10.3' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      4464,        153]
+NotebookOptionsPosition[      3789,        123]
+NotebookOutlinePosition[      4128,        138]
+CellTagsIndexPosition[      4085,        135]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[
+ RowBox[{"ClearAll", "[", "\"\<Global *\>\"", "]"}]], "Input",
+ CellChangeTimes->{{3.6663818610624237`*^9, 3.666381875152664*^9}}],
+
+Cell[CellGroupData[{
+
+Cell["Question 2", "Section",
+ CellChangeTimes->{{3.6663221850070753`*^9, 3.666322186571094*^9}}],
+
+Cell[CellGroupData[{
+
+Cell["Part c.", "Subsection",
+ CellChangeTimes->{{3.666322192372816*^9, 3.666322201933127*^9}}],
+
+Cell[CellGroupData[{
+
+Cell["The quantity \[Alpha] is defined as", "Subsubsection",
+ CellChangeTimes->{{3.666322207301219*^9, 3.6663222181944447`*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"\[Alpha]", "[", "\[Rho]_", "]"}], "=", 
+  FractionBox[
+   RowBox[{"2", " ", "a", " ", "r", " ", 
+    RowBox[{"Cos", "[", "\[Theta]", "]"}]}], 
+   SqrtBox[
+    RowBox[{
+     SuperscriptBox["\[Rho]", "2"], "+", 
+     SuperscriptBox["z", "2"], "+", 
+     SuperscriptBox["a", "2"]}]]]}]], "Input",
+ CellChangeTimes->{{3.666322221262762*^9, 3.6663222692097387`*^9}, {
+  3.66638192628983*^9, 3.666381944141749*^9}}],
+
+Cell[BoxData[
+ FractionBox[
+  RowBox[{"2", " ", "a", " ", "r", " ", 
+   RowBox[{"Cos", "[", "\[Theta]", "]"}]}], 
+  SqrtBox[
+   RowBox[{
+    SuperscriptBox["a", "2"], "+", 
+    SuperscriptBox["z", "2"], "+", 
+    SuperscriptBox["\[Rho]", "2"]}]]]], "Output",
+ CellChangeTimes->{
+  3.666322270397972*^9, 3.6663818783577547`*^9, {3.6663819088743668`*^9, 
+   3.666381936429618*^9}}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Series", "[", 
+  RowBox[{
+   RowBox[{"\[Alpha]", "[", "\[Rho]", "]"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\[Rho]", ",", "0", ",", " ", "3"}], "}"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.6663223043251333`*^9, 3.666322330208688*^9}, {
+  3.666379710218996*^9, 3.666379712501671*^9}, {3.666381780108531*^9, 
+  3.6663818182693243`*^9}, {3.666381848752274*^9, 3.666381848847962*^9}, {
+  3.6663819160396233`*^9, 3.666381917136992*^9}, {3.666381947204218*^9, 
+  3.666381954159954*^9}}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+   FractionBox[
+    RowBox[{"2", " ", "a", " ", 
+     RowBox[{"Cos", "[", "\[Theta]", "]"}], " ", "\[Rho]"}], 
+    SqrtBox[
+     RowBox[{
+      SuperscriptBox["a", "2"], "+", 
+      SuperscriptBox["z", "2"]}]]], "-", 
+   FractionBox[
+    RowBox[{"a", " ", 
+     RowBox[{"Cos", "[", "\[Theta]", "]"}], " ", 
+     SuperscriptBox["\[Rho]", "3"]}], 
+    SuperscriptBox[
+     RowBox[{"(", 
+      RowBox[{
+       SuperscriptBox["a", "2"], "+", 
+       SuperscriptBox["z", "2"]}], ")"}], 
+     RowBox[{"3", "/", "2"}]]], "+", 
+   InterpretationBox[
+    SuperscriptBox[
+     RowBox[{"O", "[", "\[Rho]", "]"}], "4"],
+    SeriesData[$CellContext`\[Rho], 0, {}, 1, 4, 1],
+    Editable->False]}],
+  SeriesData[$CellContext`\[Rho], 0, {
+   2 $CellContext`a ($CellContext`a^2 + $CellContext`z^2)^Rational[-1, 2] 
+    Cos[$CellContext`\[Theta]], 
+    0, -$CellContext`a ($CellContext`a^2 + $CellContext`z^2)^Rational[-3, 2] 
+    Cos[$CellContext`\[Theta]]}, 1, 4, 1],
+  Editable->False]], "Output",
+ CellChangeTimes->{
+  3.666322313994687*^9, 3.666379715152244*^9, 3.666381786509931*^9, {
+   3.666381819230597*^9, 3.666381878452793*^9}, {3.6663819090181932`*^9, 
+   3.666381918064651*^9}, 3.6663819546295233`*^9}]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]]
+},
+WindowSize->{959, 1028},
+WindowMargins->{{951, Automatic}, {Automatic, 0}},
+FrontEndVersion->"10.3 for Linux x86 (64-bit) (December 10, 2015)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 144, 2, 32, "Input"],
+Cell[CellGroupData[{
+Cell[727, 26, 97, 1, 65, "Section"],
+Cell[CellGroupData[{
+Cell[849, 31, 95, 1, 44, "Subsection"],
+Cell[CellGroupData[{
+Cell[969, 36, 128, 1, 35, "Subsubsection"],
+Cell[CellGroupData[{
+Cell[1122, 41, 444, 12, 71, "Input"],
+Cell[1569, 55, 379, 11, 61, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[1985, 71, 506, 10, 32, "Input"],
+Cell[2494, 83, 1243, 34, 97, "Output"]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)
+
