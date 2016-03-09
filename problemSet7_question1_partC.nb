@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[      4464,        153]
-NotebookOptionsPosition[      3789,        123]
-NotebookOutlinePosition[      4128,        138]
-CellTagsIndexPosition[      4085,        135]
+NotebookDataLength[      4652,        158]
+NotebookOptionsPosition[      3937,        127]
+NotebookOutlinePosition[      4276,        142]
+CellTagsIndexPosition[      4233,        139]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -24,8 +24,9 @@ Cell[BoxData[
 
 Cell[CellGroupData[{
 
-Cell["Question 2", "Section",
- CellChangeTimes->{{3.6663221850070753`*^9, 3.666322186571094*^9}}],
+Cell["Question 1", "Section",
+ CellChangeTimes->{{3.6663221850070753`*^9, 3.666322186571094*^9}, {
+  3.6663829041224613`*^9, 3.666382904149839*^9}}],
 
 Cell[CellGroupData[{
 
@@ -116,7 +117,10 @@ Cell[BoxData[
   3.666322313994687*^9, 3.666379715152244*^9, 3.666381786509931*^9, {
    3.666381819230597*^9, 3.666381878452793*^9}, {3.6663819090181932`*^9, 
    3.666381918064651*^9}, 3.6663819546295233`*^9}]
-}, Open  ]]
+}, Open  ]],
+
+Cell[BoxData[""], "Input",
+ CellChangeTimes->{{3.6664833645970383`*^9, 3.666483366345316*^9}}]
 }, Open  ]]
 }, Open  ]]
 }, Open  ]]
@@ -139,19 +143,20 @@ CellTagsIndex->{}
 Notebook[{
 Cell[558, 20, 144, 2, 32, "Input"],
 Cell[CellGroupData[{
-Cell[727, 26, 97, 1, 65, "Section"],
+Cell[727, 26, 148, 2, 65, "Section"],
 Cell[CellGroupData[{
-Cell[849, 31, 95, 1, 44, "Subsection"],
+Cell[900, 32, 95, 1, 44, "Subsection"],
 Cell[CellGroupData[{
-Cell[969, 36, 128, 1, 35, "Subsubsection"],
+Cell[1020, 37, 128, 1, 35, "Subsubsection"],
 Cell[CellGroupData[{
-Cell[1122, 41, 444, 12, 71, "Input"],
-Cell[1569, 55, 379, 11, 61, "Output"]
+Cell[1173, 42, 444, 12, 71, "Input"],
+Cell[1620, 56, 379, 11, 61, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[1985, 71, 506, 10, 32, "Input"],
-Cell[2494, 83, 1243, 34, 97, "Output"]
-}, Open  ]]
+Cell[2036, 72, 506, 10, 32, "Input"],
+Cell[2545, 84, 1243, 34, 121, "Output"]
+}, Open  ]],
+Cell[3803, 121, 94, 1, 32, "Input"]
 }, Open  ]]
 }, Open  ]]
 }, Open  ]]
@@ -160,4 +165,3 @@ Cell[2494, 83, 1243, 34, 97, "Output"]
 *)
 
 (* End of internal cache information *)
-
